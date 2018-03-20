@@ -42,8 +42,6 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
         let myImageViewPage: MyImageViewController = self.storyboard?.instantiateViewController(withIdentifier: "MyImageViewController") as! MyImageViewController
         
         myImageViewPage.selectedImage =   photoDataSource.photos[indexPath.row]
-     //   print(photoDataSource.photos[indexPath.row].photoID)
-      //  print(photoDataSource.photos[indexPath.row].title);
         
         self.navigationController?.pushViewController(myImageViewPage, animated: true)
         
